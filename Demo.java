@@ -16,7 +16,7 @@ public class Demo {
         WebElement text = driver.findElement(By.className("messages"));
         Assert.assertEquals(text, "Examples");
     }
-
+    /*Test*/
     @Test
     public void demoTest1() {
         driver = new ChromeDriver();
