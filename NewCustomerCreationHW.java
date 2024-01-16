@@ -95,7 +95,7 @@ public class NewCustomerCreationHW {
         Assert.assertTrue(ConfirmPassword.getAttribute("value").isEmpty());
         ConfirmPassword.sendKeys("123456!!!");
 
-        /*OTHER*/
+        /*Newsletter*/
         WebElement NewsletterEnabled = driver.findElement(By.id("input-newsletter"));
         Select dropdown = new Select(NewsletterEnabled);
         dropdown.selectByVisibleText("Enabled");
