@@ -83,12 +83,12 @@ public class ShopPragmaticNewUser {
         WebElement Checkbox = driver.findElement(By.xpath("/html/body/div[2]/div/div/form/div/div/input[1]"));
         Checkbox.click();
 
+        /*Continue Button*/
         WebElement ContinueButtonBlue = driver.findElement(By.className("btn-primary"));
         ContinueButtonBlue.click();
 
+        /*Logout assert, meaning we are logged-in in the created account*/
         WebElement LogoutButton = driver.findElement(By.className("list-group-item"));
         Assert.assertTrue(LogoutButton.isDisplayed());
-
     }
-
-    }
+}
